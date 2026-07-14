@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doğum Günü Sürprizi</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="room">
+
+    <!-- Arka Plan -->
+    <img src="images/room.png" class="room-image" alt="Oda">
+
+    <!-- Masadaki Nesneler -->
+    <div class="table-area">
+
+        <img src="images/album.png"
+             id="album"
+             class="item album"
+             alt="Albüm">
+
+        <img src="images/clock.png"
+             id="clock"
+             class="item clock"
+             alt="Saat">
+
+        <img src="images/letter.png"
+             id="letter"
+             class="item letter"
+             alt="Mektup">
+
+        <img src="images/key.png"
+             id="key"
+             class="item key"
+             alt="Anahtar">
+
+    </div>
+
+</div>
+
+<!-- ===========================
+     ALBÜM
+=========================== -->
+
+<div id="albumModal" class="modal hidden">
+
+    <div class="modal-box">
+
+        <button class="close" data-close="albumModal">✕</button>
+
+        <h2>Anılarımız ❤️</h2>
+
+        <div id="albumContent">
+
+            <img id="memoryImage" src="" alt="Anı">
+
+            <p id="memoryText"></p>
+
+        </div>
+
+        <div class="album-controls">
+
+            <button id="prevBtn">◀ Önceki</button>
+
+            <span id="pageNumber">1 / 4</span>
+
+            <button id="nextBtn">Sonraki ▶</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ===========================
+     SAAT
+=========================== -->
+<div id="clockModal" class="modal hidden">
+
+    <div class="modal-box clock-box">
+
+        <button class="close" data-close="clockModal">✕</button>
+
+        <h2>🕰️ Zaman</h2>
+
+        <div class="clock-message">
+
+            <p id="clockText">
+                Zaman geçiyor...
+                Ama bazı anılar ilk günkü kadar güzel kalıyor.
+                Bu da onlardan biri. ❤️
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ===========================
+     MEKTUP
+=========================== -->
+<div id="letterModal" class="modal hidden">
+
+    <div class="modal-box letter-box">
+
+        <button class="close" data-close="letterModal">✕</button>
+
+        <div class="letter-paper">
+
+            <h2> Sana Bir Mektup</h2>
+
+            <p id="letterText">
+
+                Buraya doğum günü mektubu gelecek.
+
+                Şimdilik örnek metin...
+
+              
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ===========================
+     VİDEO
+=========================== -->
+<div id="videoContainer" class="hidden">
+
+    <video id="birthdayVideo" playsinline>
+
+        <source src="videos/birthday.mp4" type="video/mp4">
+
+    </video>
+
+    <div id="videoEnd" class="hidden">
+
+        <h1>❤️ İyi ki Doğdun ❤️</h1>
+
+        <p>
+            Bu küçük sürpriz senin için hazırlandı.
+        </p>
+
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
